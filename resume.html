@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        header h1 {
+            margin-left: 1rem;
+            font-size: 1.5rem; /* Adjusted to make it 4pt larger than navbar */
+        }
+        nav {
+            background: #444;
+            color: #fff;
+            padding: 0.5rem 0;
+            text-align: center;
+            width: 100%;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .section {
+            padding: 2rem 0;
+        }
+        .section h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 0.5rem;
+        }
+        .download-link {
+            display: block;
+            margin: 1rem 0;
+            text-align: center;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Ethan Vertal</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="resume.html">Resume</a>
+            <a href="path/to/your_resume.pdf" download>Download My Resume (PDF)</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="download-link">
+            <a href="path/to/your_resume.pdf" download>Download My Resume (PDF)</a>
+        </div>
+
+        <!-- Education Section -->
+        <section class="section" id="education">
+            <h2>Education</h2>
+            <div>
+                <h3>B.S. in Statistics and Machine Learning</h3>
+                <p>Carnegie Mellon University, Pittsburgh, PA</p>
+                <p><strong>Aug 2020 - May 2024</strong></p>
+                <p>• Graduated with Honors</p>
+                <p>• Relevant Coursework: Generative AI, Machine Learning with Large Datasets, Intermediate Deep Learning, Statistical Computing, Statistical Methods in Finance, AI Problem Representation & Problem Solving</p>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="section" id="experience">
+            <h2>Experience</h2>
+            <div>
+                <h3>Research Apprentice</h3>
+                <p>Carnegie Mellon University, Pittsburgh, PA</p>
+                <p><strong>Jun 2023 - Aug 2023</strong></p>
+                <ul>
+                    <li>Led team to design a feasibility report and scalable plan for parallelizing a simulation software on a customized AWS-backed cluster infrastructure.</li>
+                    <li>Researched deploying NetLogo simulations on AWS using EC2, S3 Buckets, and Slurm.</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Software Engineering & Machine Learning Intern</h3>
+                <p>CrafterCMS, Reston, VA</p>
+                <p><strong>Jun - Aug 2021 & Jun - Aug 2022</strong></p>
+                <ul>
+                    <li>Designed and implemented a TensorFlow-based recommendation system web app.</li>
+                    <li>Analyzed and cleaned data using NumPy, Pandas, and Matplotlib libraries.</li>
+                    <li>Built an Alexa plugin for enterprise websites in Groovy.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="section" id="projects">
+            <h2>Projects</h2>
+            <div>
+                <h3>A New Method of Generating Images</h3>
+                <ul>
+                    <li>Led a 3-person team in the implementation of a novel score-based diffusion algorithm for generating numbers, as proposed in an academic paper.</li>
+                    <li>Authored comprehensive project documentation, including the proposal, midway, and final reports, ensuring clear communication and project milestones.</li>
+                    <li>Developed and fine-tuned the algorithm using PyTorch, translating complex mathematical concepts from the paper into functional code, achieving a successful first-ever implementation.</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Using GPT2 to Analyze Movie Reviews</h3>
+                <ul>
+                    <li>Leveraged HuggingFace and PyTorch APIs to improve GPT2-medium’s ability to analyze sentiment.</li>
+                    <li>Implemented a modified linear layer to incorporate LoRA fine-tuning for IMDB movie review sentiment analysis.</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Bone Fracture Detector</h3>
+                <ul>
+                    <li>Designed and implemented a deep CNN with residual passes to detect bone fractures from X-ray images using TensorFlow’s functional API.</li>
+                    <li>Leveraged image augmentation, Bayesian Optimization hyper-parameter tuning, and multi-GPU training strategies to achieve 82% testing accuracy.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Awards & Extracurricular Activities Section -->
+        <section class="section" id="awards">
+            <h2>Awards & Extracurricular Activities</h2>
+            <div>
+                <ul>
+                    <li>Carnegie Mellon Men’s Soccer Team (2020-2023): Dedicated 20+ hours per week while balancing a full academic workload. Earned UAA All-Academic and UAA Offensive Player of the Week Awards.</li>
+                    <li>Student Athlete Academic Award (2022-2023): Achieved highest GPA in respective college as a rising fourth year in the Athletic Department.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="section" id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Languages: Python, R, PostgreSQL, C, Java</li>
+                <li>Tools & Frameworks: PyTorch, PySpark, AWS, SKLearn, TensorFlow, NumPy, Matplotlib, Tidyverse, W&B</li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Ethan Vertal. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
