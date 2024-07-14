@@ -79,12 +79,10 @@
         <h1>Ethan Vertal</h1>
         <nav>
             <a href="#about-me">About Me</a>
-            <a href="#projects">Projects</a>
-            <a href="#skills">Skills</a>
-            <a href="#education">Education</a>
-            <a href="#experience">Experience</a>
-            <a href="#contact">Contact</a>
             <a href="resume.html">Resume</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+            
         </nav>
     </header>
 
@@ -96,28 +94,33 @@
         <!-- About Me Section -->
         <section class="section" id="about-me">
             <h2>About Me</h2>
-            <p>
-                I am a passionate data scientist with a strong background in machine learning, data visualization, and creating impactful projects...
-            </p>
+            <div class="profile">
+                <img src="path/to/your_profile_picture.png" alt="Profile Picture">
+                <p>
+                    I am a passionate data scientist with a strong background in machine learning, data visualization, and creating impactful projects...
+                </p>
+            </div>
         </section>
 
         <!-- Projects Section -->
         <section class="section" id="projects">
             <h2>Projects</h2>
-            <div>
-                <h3><a href="https://github.com/ethanvert/rdmc">A New Method of Generating Images</a></h3>
-                <p>This was a thrilling project where I led a 3-person team in implementing a novel score-based diffusion algorithm for generating images, based on a recent academic paper. Translating the complex mathematical concepts from the paper into functional code using PyTorch was quite the challenge, but incredibly rewarding. We authored comprehensive documentation throughout the project, ensuring clear communication and well-defined milestones. It was a first-ever successful implementation, and I'm really proud of the work we did. You can check out the detailed project here.</p>
+            <div class="projects">
+                <div class="project-tile">
+                    <img src="./Poster.pdf" alt="RDMC Image">
+                    <h3><a href="https://github.com/ethanvert/rdmc">A New Method of Generating Images</a></h3>
+                    <p>This was a thrilling project where I led a 3-person team in implementing a novel score-based diffusion algorithm for generating images, based on a recent academic paper. Translating the complex mathematical concepts from the paper into functional code using PyTorch was quite the challenge, but incredibly rewarding. We authored comprehensive documentation throughout the project, ensuring clear communication and well-defined milestones. To our knowledge, it was the first implementation of this algorithm on images, and I'm really proud of the work we did. You can check out the detailed project here.</p>
+                </div>
+                <div class="project-tile">
+                    <img src="./movies.jpg" alt="Project 2 Image">
+                    <h3><a href="https://github.com/username/project2">Using GPT-2 to Analyze Movie Reviews</a></h3>
+                    <p>I decided to put GPT-2 to the test by enhancing its ability to analyze sentiment in movie reviews. Using HuggingFace and PyTorch APIs, I implemented a modified linear layer to incorporate LoRA fine-tuning specifically for IMDB movie review sentiment analysis. The process involved a lot of trial and error, but seeing the improvement in sentiment analysis accuracy was quite satisfying. It’s a great example of how fine-tuning pre-trained models can yield impressive results.</p>
+                </div>
             </div>
-            <div>
-                <h3><a href="https://github.com/username/project2">Project 2</a></h3>
-                <p>I decided to put GPT-2 to the test by enhancing its ability to analyze sentiment in movie reviews. Using HuggingFace and PyTorch APIs, I implemented a modified linear layer to incorporate LoRA fine-tuning specifically for IMDB movie review sentiment analysis. The process involved a lot of trial and error, but seeing the improvement in sentiment analysis accuracy was quite satisfying. It’s a great example of how fine-tuning pre-trained models can yield impressive results.</p>
-            </div>
-            
         </section>
-    </div>
 
     <footer>
-        <p>You can reach me at <a href="mailto:your.email@example.com">your.email@example.com</a>.</p>
+        <p>You can reach me at <a href="ethan.vertal@gmail.com">ethan.vertal@gmail.com</a>.</p>
     </footer>
 
 </body>
