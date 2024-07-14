@@ -88,7 +88,7 @@
 
     <div class="container">
         <div class="download-link">
-            <a href="./Ethan_Vertal_Resume_June24.pdf" download>Download My Resume (PDF)</a>
+            <a href="./assets/Ethan_Vertal_Resume_June24.pdf" download>Download My Resume (PDF)</a>
         </div>
         
         <!-- About Me Section -->
@@ -106,16 +106,32 @@
         <section class="section" id="projects">
             <h2>Projects</h2>
             <div class="projects">
-                <div class="project-tile">
-                    <img src="./poster.png" alt="RDMC Image">
-                    <h3><a href="https://github.com/ethanvert/rdmc">A New Method of Generating Images</a></h3>
+                <div class="project-tile" onclick="location.href='https://github.com/ethanvert/rdmc'">
+                    <img src="./assets/poster.png" alt="RDMC Image">
+                    <div class="overlay">
+                        <div class="text-overlay">Click here to view -></div>
+                    </div>
+                    <h3>A New Method of Generating Images</h3>
+                </div>
+                <div class="project-tile" onclick="location.href='https://github.com/ethanvert/repo'">
+                    <img src="./assets/movies.jpg" alt="Project 2 Image">
+                    <div class="overlay">
+                        <div class="text-overlay">Click here to view -></div>
+                    </div>
+                    <h3>Using GPT-2 to Analyze Movie Reviews</h3>
+                </div>
+            </div>
+        </section>
+
+                <!--<h3><a href="https://github.com/ethanvert/rdmc">A New Method of Generating Images</a></h3>
                     <p>This was a thrilling project where I led a 3-person team in implementing a novel score-based diffusion algorithm for generating images, based on a recent academic paper. Translating the complex mathematical concepts from the paper into functional code using PyTorch was quite the challenge, but incredibly rewarding. We authored comprehensive documentation throughout the project, ensuring clear communication and well-defined milestones. To our knowledge, it was the first implementation of this algorithm on images, and I'm really proud of the work we did. You can check out the detailed project here.</p>
-                </div>
-                <div class="project-tile">
-                    <img src="./movies.jpg" alt="Project 2 Image">
-                    <h3><a href="https://github.com/username/project2">Using GPT-2 to Analyze Movie Reviews</a></h3>
+                -->
+
+                <!--<h3><a href="https://github.com/username/project2">Using GPT-2 to Analyze Movie Reviews</a></h3>
                     <p>I decided to put GPT-2 to the test by enhancing its ability to analyze sentiment in movie reviews. Using HuggingFace and PyTorch APIs, I implemented a modified linear layer to incorporate LoRA fine-tuning specifically for IMDB movie review sentiment analysis. The process involved a lot of trial and error, but seeing the improvement in sentiment analysis accuracy was quite satisfying. It’s a great example of how fine-tuning pre-trained models can yield impressive results.</p>
-                </div>
+                -->
+
+
             </div>
         </section>
 
