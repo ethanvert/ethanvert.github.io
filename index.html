@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ethan's Portfolio</title>
+    <title>My Portfolio</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -15,7 +15,7 @@
         header {
             background: #333;
             color: #fff;
-            padding: 1rem 0;
+            padding: 1rem 2rem;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -25,15 +25,11 @@
             z-index: 1000;
         }
         header h1 {
-            margin-left: 1rem;
             font-size: 1.5rem; /* Adjusted to make it 4pt larger than navbar */
         }
         nav {
-            background: #444;
-            color: #fff;
-            padding: 0.5rem 0;
-            text-align: center;
-            width: 100%;
+            display: flex;
+            align-items: center;
         }
         nav a {
             color: #fff;
@@ -48,6 +44,7 @@
             width: 80%;
             margin: auto;
             overflow: hidden;
+            padding-top: 1rem;
         }
         .section {
             padding: 2rem 0;
@@ -55,6 +52,85 @@
         .section h2 {
             border-bottom: 2px solid #333;
             padding-bottom: 0.5rem;
+        }
+        .profile {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+        .profile img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            margin-right: 2rem;
+        }
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+        }
+        .project-tile {
+            position: relative;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            width: 300px;
+            height: 200px;
+            overflow: hidden;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .project-tile img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        .project-tile:hover img {
+            transform: scale(1.1);
+        }
+        .project-tile .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .project-tile:hover .overlay {
+            opacity: 1;
+        }
+        .project-tile h3 {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            margin: 0;
+            color: #fff;
+            font-size: 1.25rem;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 5px;
+            border-radius: 5px;
+        }
+        .project-tile .text-overlay {
+            text-align: center;
+            font-size: 1.25rem;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 5px;
+        }
+        .download-link {
+            display: block;
+            margin: 1rem 0;
+            text-align: center;
         }
         footer {
             background: #333;
@@ -66,11 +142,6 @@
         a {
             color: #333;
         }
-        .download-link {
-            display: block;
-            margin: 1rem 0;
-            text-align: center;
-        }
     </style>
 </head>
 <body>
@@ -81,14 +152,13 @@
             <a href="#about-me">About Me</a>
             <a href="resume.html">Resume</a>
             <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-            
+            <a href="path/to/your_resume.pdf" download>Download My Resume (PDF)</a>
         </nav>
     </header>
 
     <div class="container">
         <div class="download-link">
-            <a href="./assets/Ethan_Vertal_Resume_June24.pdf" download>Download My Resume (PDF)</a>
+            <a href="path/to/your_resume.pdf" download>Download My Resume (PDF)</a>
         </div>
         
         <!-- About Me Section -->
@@ -106,37 +176,27 @@
         <section class="section" id="projects">
             <h2>Projects</h2>
             <div class="projects">
-                <div class="project-tile" onclick="location.href='https://github.com/ethanvert/rdmc'">
-                    <img src="./assets/poster.png" alt="RDMC Image">
+                <div class="project-tile" onclick="location.href='rdmc.html'">
+                    <img src="assets/poster.png" alt="Project Poster">
                     <div class="overlay">
                         <div class="text-overlay">Click here to view -></div>
                     </div>
                     <h3>A New Method of Generating Images</h3>
                 </div>
-                <div class="project-tile" onclick="location.href='https://github.com/ethanvert/repo'">
-                    <img src="./assets/movies.jpg" alt="Project 2 Image">
+                <div class="project-tile" onclick="location.href='imdb.html'">
+                    <img src="assets/movies.jpg" alt="Movies">
                     <div class="overlay">
                         <div class="text-overlay">Click here to view -></div>
                     </div>
                     <h3>Using GPT-2 to Analyze Movie Reviews</h3>
                 </div>
+                <!-- Add more project tiles as needed -->
             </div>
         </section>
-
-                <!--<h3><a href="https://github.com/ethanvert/rdmc">A New Method of Generating Images</a></h3>
-                    <p>This was a thrilling project where I led a 3-person team in implementing a novel score-based diffusion algorithm for generating images, based on a recent academic paper. Translating the complex mathematical concepts from the paper into functional code using PyTorch was quite the challenge, but incredibly rewarding. We authored comprehensive documentation throughout the project, ensuring clear communication and well-defined milestones. To our knowledge, it was the first implementation of this algorithm on images, and I'm really proud of the work we did. You can check out the detailed project here.</p>
-                -->
-
-                <!--<h3><a href="https://github.com/username/project2">Using GPT-2 to Analyze Movie Reviews</a></h3>
-                    <p>I decided to put GPT-2 to the test by enhancing its ability to analyze sentiment in movie reviews. Using HuggingFace and PyTorch APIs, I implemented a modified linear layer to incorporate LoRA fine-tuning specifically for IMDB movie review sentiment analysis. The process involved a lot of trial and error, but seeing the improvement in sentiment analysis accuracy was quite satisfying. It’s a great example of how fine-tuning pre-trained models can yield impressive results.</p>
-                -->
-
-
-            </div>
-        </section>
+    </div>
 
     <footer>
-        <p>You can reach me at <a href="ethan.vertal@gmail.com">ethan.vertal@gmail.com</a>.</p>
+        <p>&copy; 2024 Ethan Vertal. All Rights Reserved.</p>
     </footer>
 
 </body>
