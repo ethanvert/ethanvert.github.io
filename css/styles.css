@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background: #333;
+    background: #000; /* Set header background to black */
     color: #fff;
     padding: 1rem 2rem;
     position: sticky;
@@ -23,7 +23,8 @@ header {
 }
 
 header h1 {
-    font-size: 1.5rem;
+    font-size: 2rem; /* Increase font size */
+    font-weight: 300; /* Thin out the font */
     white-space: nowrap;
 }
 
@@ -37,6 +38,7 @@ nav a {
     margin: 0 1rem;
     text-decoration: none;
     font-weight: bold;
+    font-size: 1.1rem; /* Increase font size */
 }
 
 nav a:hover {
@@ -65,6 +67,8 @@ nav a:hover {
 .hero p {
     font-size: 1.2rem;
     margin-bottom: 2rem;
+    max-width: 90%; /* Ensure text doesn't overflow */
+    margin: auto;
 }
 
 .cta-button {
