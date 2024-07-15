@@ -4,91 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Using GPT-2 to Analyze Movie Reviews</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background: #f4f4f4;
-        }
-        header {
-            background: #333;
-            color: #fff;
-            padding: 1rem 2rem;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            position: sticky;
-            top: 0;
-            width: 100%;
-            z-index: 1000;
-        }
-        header h1 {
-            font-size: 1.5rem; /* Adjusted to make it 4pt larger than navbar */
-        }
-        nav {
-            display: flex;
-            align-items: center;
-        }
-        nav a {
-            color: #fff;
-            margin: 0 1rem;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-            padding-top: 1rem;
-        }
-        .section {
-            padding: 2rem 0;
-        }
-        .section h2 {
-            border-bottom: 2px solid #333;
-            padding-bottom: 0.5rem;
-        }
-        .content img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-            margin-bottom: 1rem;
-        }
-        .download-link {
-            display: block;
-            margin: 1rem 0;
-            text-align: center;
-        }
-        footer {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1rem 0;
-            margin-top: 2rem;
-        }
-        a {
-            color: #333;
-        }
-    </style>
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
 
     <header>
-        <h1>Ethan Vertal</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="resume.html">Resume</a>
-            <a href="./assets/Ethan_Vertal_Resume_June24.pdf" download>Download My Resume (PDF)</a>
-        </nav>
+        <div class="header-container">
+            <h1>Ethan Vertal</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="resume.html">Resume</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+                <a href="./assets/Ethan_Vertal_Resume_June24.pdf" download>Download My Resume (PDF)</a>
+            </nav>
+        </div>
     </header>
 
     <div class="container">
-        <div class="section">
+        <section class="section">
             <h2>Using GPT-2 to Analyze Movie Reviews</h2>
             <div class="content">
                 <img src="./assets/movies.jpg" alt="Using GPT-2 to Analyze Movie Reviews">
@@ -99,11 +33,11 @@
                     You can check out the detailed project and the code on <a href="https://github.com/username/project2" target="_blank">GitHub</a>.
                 </p>
             </div>
-        </div>
+        </section>
     </div>
 
     <footer>
-        <p>You can reach me at <a href="mailto:ethan.vertal@gmail.com">ethan.vertal@gmail.com</a>.</p>
+        <p>You can reach me at <a href="mailto:ethan.vertal@gmail.com">ethan.vertal@gmail.com</p>
     </footer>
 
 </body>

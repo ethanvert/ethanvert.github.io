@@ -3,35 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ethan Vertal - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
 
     <header>
-        <h1>Ethan Vertal</h1>
-        <nav>
-            <a href="#about-me">About Me</a>
-            <a href="resume.html">Resume</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-            <a href="./assets/Ethan_Vertal_Resume_June24.pdf" download>Download My Resume (PDF)</a>
-        </nav>
+        <div class="header-container">
+            <h1>Ethan Vertal</h1>
+            <nav>
+                <a href="#about-me">About Me</a>
+                <a href="resume.html">Resume</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+                <a href="./assets/Ethan_Vertal_Resume_June24.pdf" download>Download My Resume (PDF)</a>
+            </nav>
+        </div>
     </header>
 
-    <section class="hero">
+    <div class="hero">
         <div class="hero-content">
-            <h2>Welcome to My Portfolio</h2>
-            <p>Discover my work, experience, and projects in data science and machine learning.</p>
+            <h2>Welcome to My Professional Portfolio</h2>
+            <p>Discover my work, experience, and skills as a Data Scientist and Machine Learning Engineer.</p>
+            <a href="#projects" class="cta-button">View My Projects</a>
         </div>
-    </section>
+    </div>
 
     <div class="container">
         <!-- About Me Section -->
         <section class="section" id="about-me">
             <h2>About Me</h2>
             <div class="profile">
-                <img src="./assets/your_profile_picture.png" alt="Profile Picture">
+                <img src="./assets/profile_picture.png" alt="Profile Picture">
                 <p>
                     I am a passionate data scientist with a strong background in machine learning, data visualization, and creating impactful projects...
                 </p>
@@ -68,7 +71,7 @@
     </div>
 
     <footer>
-        <p>&copy; 2024 Ethan Vertal. All Rights Reserved.</p>
+        <p>You can reach me at <a href="mailto:ethan.vertal@gmail.com">ethan.vertal@gmail.com</p>
     </footer>
 
 </body>
