@@ -3,146 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background: #f4f4f4;
-        }
-        header {
-            background: #333;
-            color: #fff;
-            padding: 1rem 2rem;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            position: sticky;
-            top: 0;
-            width: 100%;
-            z-index: 1000;
-        }
-        header h1 {
-            font-size: 1.5rem; /* Adjusted to make it 4pt larger than navbar */
-        }
-        nav {
-            display: flex;
-            align-items: center;
-        }
-        nav a {
-            color: #fff;
-            margin: 0 1rem;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-            padding-top: 1rem;
-        }
-        .section {
-            padding: 2rem 0;
-        }
-        .section h2 {
-            border-bottom: 2px solid #333;
-            padding-bottom: 0.5rem;
-        }
-        .profile {
-            display: flex;
-            align-items: center;
-            margin-bottom: 2rem;
-        }
-        .profile img {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            margin-right: 2rem;
-        }
-        .projects {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 2rem;
-            justify-content: center;
-        }
-        .project-tile {
-            position: relative;
-            background: #fff;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            width: 300px;
-            height: 200px;
-            overflow: hidden;
-            text-align: center;
-            cursor: pointer;
-            transition: transform 0.3s ease;
-        }
-        .project-tile img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.3s ease;
-        }
-        .project-tile:hover img {
-            transform: scale(1.1);
-        }
-        .project-tile .overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.5);
-            color: #fff;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
-        .project-tile:hover .overlay {
-            opacity: 1;
-        }
-        .project-tile h3 {
-            position: absolute;
-            bottom: 10px;
-            left: 10px;
-            margin: 0;
-            color: #fff;
-            font-size: 1.25rem;
-            background: rgba(0, 0, 0, 0.7);
-            padding: 5px;
-            border-radius: 5px;
-        }
-        .project-tile .text-overlay {
-            text-align: center;
-            font-size: 1.25rem;
-            padding: 10px;
-            background: rgba(0, 0, 0, 0.7);
-            border-radius: 5px;
-        }
-        .download-link {
-            display: block;
-            margin: 1rem 0;
-            text-align: center;
-        }
-        footer {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1rem 0;
-            margin-top: 2rem;
-        }
-        a {
-            color: #333;
-        }
-    </style>
+    <title>Ethan Vertal - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -152,20 +14,24 @@
             <a href="#about-me">About Me</a>
             <a href="resume.html">Resume</a>
             <a href="#projects">Projects</a>
-            <a href="path/to/your_resume.pdf" download>Download My Resume (PDF)</a>
+            <a href="#contact">Contact</a>
+            <a href="./assets/Ethan_Vertal_Resume_June24.pdf" download>Download My Resume (PDF)</a>
         </nav>
     </header>
 
-    <div class="container">
-        <div class="download-link">
-            <a href="path/to/your_resume.pdf" download>Download My Resume (PDF)</a>
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Welcome to My Portfolio</h2>
+            <p>Discover my work, experience, and projects in data science and machine learning.</p>
         </div>
-        
+    </section>
+
+    <div class="container">
         <!-- About Me Section -->
         <section class="section" id="about-me">
             <h2>About Me</h2>
             <div class="profile">
-                <img src="path/to/your_profile_picture.png" alt="Profile Picture">
+                <img src="./assets/your_profile_picture.png" alt="Profile Picture">
                 <p>
                     I am a passionate data scientist with a strong background in machine learning, data visualization, and creating impactful projects...
                 </p>
@@ -177,21 +43,27 @@
             <h2>Projects</h2>
             <div class="projects">
                 <div class="project-tile" onclick="location.href='rdmc.html'">
-                    <img src="assets/poster.png" alt="Project Poster">
+                    <img src="./assets/poster.png" alt="Project Poster">
                     <div class="overlay">
-                        <div class="text-overlay">Click here to view -></div>
+                        <div class="text-overlay">Click here to view</div>
                     </div>
                     <h3>A New Method of Generating Images</h3>
                 </div>
                 <div class="project-tile" onclick="location.href='imdb.html'">
-                    <img src="assets/movies.jpg" alt="Movies">
+                    <img src="./assets/movies.jpg" alt="Movies">
                     <div class="overlay">
-                        <div class="text-overlay">Click here to view -></div>
+                        <div class="text-overlay">Click here to view</div>
                     </div>
                     <h3>Using GPT-2 to Analyze Movie Reviews</h3>
                 </div>
                 <!-- Add more project tiles as needed -->
             </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section" id="contact">
+            <h2>Contact</h2>
+            <p>You can reach me at <a href="mailto:ethan.vertal@gmail.com">ethan.vertal@gmail.com</a>.</p>
         </section>
     </div>
 
