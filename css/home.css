@@ -27,6 +27,12 @@
     margin: auto;
 }
 
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
 .cta-button {
     background: #007BFF;
     color: #fff;
@@ -36,8 +42,16 @@
     font-size: 1.2rem;
 }
 
+.cta-button.secondary {
+    background: #6c757d;
+}
+
 .cta-button:hover {
     background: #0056b3;
+}
+
+.cta-button.secondary:hover {
+    background: #5a6268;
 }
 
 .container {
