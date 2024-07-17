@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A New Method of Generating Images</title>
+    <title>Reverse Diffusion Monte Carlo</title>
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/project.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -14,31 +15,56 @@
             <h1>Ethan Vertal</h1>
             <nav>
                 <a href="index.html">Home</a>
-                <a href="resume.html">Resume</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
+                <a href="index.html#projects">Projects</a>
+                <a href="index.html#contact">Contact</a>
                 <a href="./assets/Ethan_Vertal_Resume_June24.pdf" download>Download My Resume (PDF)</a>
             </nav>
         </div>
     </header>
 
     <div class="container">
-        <section class="section">
+        <section class="section" id="project">
             <h2>A New Method of Generating Images</h2>
-            <div class="content">
-                <div class="grid">
-                    <img src="./assets/poster.png" alt="Project Poster">
-                    <img src="./assets/movies.jpg" alt="Movies">
+            <div class="project-content">
+                <img src="./assets/poster.png" alt="RDMC Poster" class="project-image">
+                <p>
+                    This project was our final assignment for Generative AI at CMU. We implemented a new way of looking at the reverse diffusion process from Huang et. al., 2024. To our knowledge, no one had implemented this before, so we decided it would be fun to try.
+                </p>
+                <p>
+                    Implementing a new algorithm from just the paper comes with more challenges than we possibly could have accounted for. That being said, it was fun working with these two and I thought I'd make this work publicly available because I'm proud of what we did. Our results were below what we were hoping for, but Google Colab is not exactly friendly for 12+ hour coding sessions. Enjoy!
+                </p>
+                <div class="challenges-takeaways">
+                    <div class="challenges">
+                        <h4>Challenges</h4>
+                        <ul>
+                            <li>We needed to learn the underlying, complex math behind the algorithm.</li>
+                            <li>Optimizing training around the constraints of Google Colab for extended coding sessions.</li>
+                            <li>Collaborating and communicating effectively with multiple concurrent projects.</li>
+                        </ul>
+                    </div>
+                    <div class="takeaways">
+                        <h4>Takeaways</h4>
+                        <ul>
+                            <li>I deeply researched and understand the math behind multiple diffusion image generation algorithms.</li>
+                            <li>In research, sometimes finding out what doesn't work is a step towards finding what does.</li>
+                            <li>Working in a team you want to work for leads to much better results.</li>
+                        </ul>
+                    </div>
                 </div>
-                <p>
-                    This was a thrilling project where I led a 3-person team in implementing a novel score-based diffusion algorithm for generating images, based on a recent academic paper. Translating the complex mathematical concepts from the paper into functional code using PyTorch was quite the challenge, but incredibly rewarding. We authored comprehensive documentation throughout the project, ensuring clear communication and well-defined milestones. It was a first-ever successful implementation, and I'm really proud of the work we did.
-                </p>
-                <p>
-                    Our results were below what we were hoping for, but the learning experience and the challenge of implementing a new algorithm from scratch were invaluable. Google Colab, where we ran our experiments, is not exactly friendly for 12+ hour coding sessions, but we managed to overcome the hurdles.
-                </p>
-                <p>
-                    You can check out the detailed project and the code on <a href="https://github.com/ethanvert/rdmc" target="_blank">GitHub</a>.
-                </p>
+                <h3>Technologies and Concepts Used:</h3>
+                <ul>
+                    <li>Python</li>
+                    <li>PyTorch</li>
+                    <li>Google Colab</li>
+                    <li>UNet Neural Network</li>
+                    <li>Reverse Diffusion Monte Carlo</li>
+                    <li>Stochastic Differential Equations</li>
+                    <li>Monte Carlo Methods</li>
+                </ul>
+                <h3>Learn More:</h3>
+                <ul>
+                    <a href="https://github.com/ethanvert/rdmc" target="_blank">GitHub</a>
+                </ul>
             </div>
         </section>
     </div>

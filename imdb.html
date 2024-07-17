@@ -6,6 +6,7 @@
     <title>Using GPT-2 to Analyze Movie Reviews</title>
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/project.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -15,24 +16,56 @@
             <nav>
                 <a href="index.html">Home</a>
                 <a href="resume.html">Resume</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
+                <a href="index.html#projects">Projects</a>
+                <a href="index.html#contact">Contact</a>
                 <a href="./assets/Ethan_Vertal_Resume_June24.pdf" download>Download My Resume (PDF)</a>
             </nav>
         </div>
     </header>
 
     <div class="container">
-        <section class="section">
+        <section class="section" id="project">
             <h2>Using GPT-2 to Analyze Movie Reviews</h2>
-            <div class="content">
-                <img src="./assets/movies.jpg" alt="Using GPT-2 to Analyze Movie Reviews">
+            <div class="project-content">
+                <img src="./assets/movies.jpg" alt="Using GPT-2 to Analyze Movie Reviews" class="project-image">
                 <p>
-                    I decided to put GPT-2 to the test by enhancing its ability to analyze sentiment in movie reviews. Using HuggingFace and PyTorch APIs, I implemented a modified linear layer to incorporate LoRA fine-tuning specifically for IMDB movie review sentiment analysis. The process involved a lot of trial and error, but seeing the improvement in sentiment analysis accuracy was quite satisfying. It’s a great example of how fine-tuning pre-trained models can yield impressive results.
+                    I decided to put GPT-2 to the test by enhancing its ability to analyze sentiment in movie reviews. Using HuggingFace and PyTorch APIs, I implemented a modified linear layer to incorporate LoRA fine-tuning specifically for IMDB movie review sentiment analysis.
                 </p>
                 <p>
-                    You can check out the detailed project and the code on <a href="https://github.com/username/project2" target="_blank">GitHub</a>.
+                    The process involved a lot of trial and error, but seeing the improvement in sentiment analysis accuracy was quite satisfying. It’s a great example of how fine-tuning pre-trained models can yield impressive results.
                 </p>
+                <div class="challenges-takeaways">
+                    <div class="challenges">
+                        <h4>Challenges</h4>
+                        <ul>
+                            <li>Prompt engineering for instruction fine-tuning.</li>
+                            <li>Learning and implementing the math for LoRA.</li>
+                            <li>Handling documents and strings.</li>
+                        </ul>
+                    </div>
+                    <div class="takeaways">
+                        <h4>Takeaways</h4>
+                        <ul>
+                            <li>Implemented my own LLM fine-tuning system.</li>
+                            <li>Gained experience with HuggingFace and PyTorch APIs.</li>
+                            <li>Enhanced skills in document processing and natural language processing.</li>
+                        </ul>
+                    </div>
+                </div>
+                <h3>Technologies and Concepts Used:</h3>
+                <ul>
+                    <li>Python</li>
+                    <li>PyTorch</li>
+                    <li>HuggingFace</li>
+                    <li>GPT-2</li>
+                    <li>Sentiment Analysis</li>
+                    <li>LoRA</li>
+                    <li>AI API Communication</li>
+                </ul>
+                <h3>Learn More:</h3>
+                <ul>
+                    <li>Coming soon</li>
+                </ul>
             </div>
         </section>
     </div>
