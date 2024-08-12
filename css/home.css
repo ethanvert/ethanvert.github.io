@@ -1,15 +1,3 @@
-/* .hero {
-    position: relative;
-    overflow: hidden;
-    height: 100vh;png
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: #fff; /* Add padding to ensure text stays within the page */
-/*}*/
-
 .hero {
     height: 60vh; /* Adjust the height as needed to fit your text */
     width: 100%;
