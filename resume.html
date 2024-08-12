@@ -12,16 +12,21 @@
 
     <header>
         <div class="header-container">
-            <h1>Ethan Vertal</h1>
+            <h1><a href="index.html">Ethan Vertal</a></h1>
             <nav>
-                <a href="index.html">Home</a>
-                <a href="index.html#projects">Projects</a>
-                <a href="index.html#contact">Contact</a>
-                <a href="./assets/Ethan_Vertal_Resume_June24.pdf" download>Download My Resume (PDF)</a>
+                <div class="menu-icon" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul id="nav-links" class="nav-links">
+                    <li><a href="index.html#about-me">About Me</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="index.html#projects">Projects</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="./assets/Ethan_Vertal_Resume_June24.pdf" download>Download My Resume (PDF)</a></li>
+                </ul>
             </nav>
         </div>
     </header>
-
     <div class="container">
         <section class="section" id="resume">
             <h2>Resume</h2>
@@ -57,35 +62,18 @@
                         <li>Analyzed and cleaned data using NumPy, Pandas, and Matplotlib.</li>
                     </ul>
                 </div>
-                <h3>Projects</h3>
-                <div>
-                    <h4>A New Method of Generating Images</h4>
-                    <p>Led a 3-person team in implementing a novel score-based diffusion algorithm for generating images.</p>
-                    <p>Authored comprehensive project documentation, including the proposal, midway, and final reports, ensuring clear communication and project milestones.</p>
-                    <p>Developed and fine-tuned the algorithm using PyTorch, achieving a successful first-ever implementation.</p>
-                </div>
-                <div>
-                    <h4>Using GPT-2 to Analyze Movie Reviews</h4>
-                    <p>Leveraged HuggingFace and PyTorch APIs to improve GPT2-medium’s ability to analyze sentiment.</p>
-                    <p>Implemented a modified linear layer to incorporate LoRA fine-tuning for IMDB movie review sentiment analysis.</p>
-                </div>
-                <div>
-                    <h4>Bone Fracture Detector</h4>
-                    <p>Designed and implemented a deep CNN with residual passes to detect bone fractures from X-ray images using TensorFlow’s functional API.</p>
-                    <p>Achieved 82% testing accuracy through image augmentation, Bayesian Optimization hyper-parameter tuning, and multi-GPU training strategies.</p>
-                </div>
                 <h3>Awards & Extracurricular Activities</h3>
                 <div>
                     <ul>
-                        <li>Carnegie Mellon Men’s Soccer Team (2020-2023): Dedicated 20+ hours per week while balancing a full academic workload. Earned UAA All-Academic and UAA Offensive Player of the Week Awards.</li>
-                        <li>Student Athlete Academic Award (2022-2023): Achieved highest GPA in respective college as a rising fourth year in the Athletic Department.</li>
+                        <li><strong>Carnegie Mellon Men’s Soccer Team (2020-2023):</strong> Dedicated 20+ hours per week while balancing a full academic workload. Earned UAA All-Academic and UAA Offensive Player of the Week Awards.</li>
+                        <li><strong>Student Athlete Academic Award (2022-2023):</strong> Achieved highest GPA in respective college as a rising fourth year in the Athletic Department.</li>
                     </ul>
                 </div>
                 <h3>Skills</h3>
                 <div>
                     <ul>
                         <li>Languages: Python, R, PostgreSQL, C, Java</li>
-                        <li>Tools & Frameworks: PyTorch, PySpark, AWS, SKLearn, TensorFlow, NumPy, Matplotlib, Tidyverse, W&B</li>
+                        <li>Tools & Frameworks: PyTorch, PySpark, AWS, SKLearn, TensorFlow, NumPy, Matplotlib, Tidyverse, W&B, HuggingFace, TQDM</li>
                     </ul>
                 </div>
             </div>

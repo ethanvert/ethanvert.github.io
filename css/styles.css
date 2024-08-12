@@ -10,11 +10,11 @@ body {
     margin: 0;
     padding: 0;
     background: #f4f4f4;
-    overflow-x: hidden; /* Prevent horizontal overflow */
+    overflow-x: hidden; 
 }
 
 header, footer {
-    background: #000; /* Set header and footer background to black */
+    background: #000; 
     color: #fff;
     padding: 1rem 2rem;
 }
@@ -26,6 +26,7 @@ header {
     z-index: 1000;
     display: flex;
     justify-content: space-between;
+    max-width: 100%; 
     align-items: center;
 }
 
@@ -35,14 +36,25 @@ header {
     align-items: center;
     max-width: 1200px;
     margin: auto;
+    max-width: 100%; 
     width: 100%;
 }
 
 header h1 {
-    font-size: 2rem; /* Increase font size */
+    
+    font-size: 2rem; 
     font-weight: 300; 
     white-space: nowrap;
-    margin-right: auto; /* Move name to the left */
+    margin-right: auto; 
+}
+
+header h1 a{
+    color: #fff;
+    text-decoration: none;
+}
+
+header h1 a:hover {
+    text-decoration: underline;
 }
 
 nav {
@@ -50,17 +62,59 @@ nav {
     align-items: center;
 }
 
-nav a {
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 1rem;
+}
+
+.nav-links a {
     color: #fff;
     margin: 0 1rem;
     text-decoration: none;
     font-weight: 200;
-    font-size: 1.3rem; /* Increase font size */
+    font-size: 1.3rem; 
 }
-
-nav a:hover {
+.nav-links a:hover {
     text-decoration: underline;
 }
+
+.menu-icon {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background: #000;
+        opacity: 90%;
+        width: 100%;
+        text-align: right;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+}
+
 
 footer {
     background: #333;

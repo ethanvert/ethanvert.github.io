@@ -23,3 +23,8 @@ document.addEventListener("DOMContentLoaded", function() {
     // Set the selected image as the background for the hero section
     hero.style.background = `url('../assets/landscapes/${selectedImage}') no-repeat center center/cover`;
 });
+
+function toggleMenu() {
+    const navLinks = document.getElementById("nav-links");
+    navLinks.classList.toggle("active");
+}
