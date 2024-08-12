@@ -88,7 +88,7 @@ nav {
     
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1300px) {
     header h1 a{
         color: #fff;
         text-decoration: none;
@@ -97,7 +97,7 @@ nav {
     header h1 a:hover {
         text-decoration: underline;
     }
-    
+
     .nav-links {
         display: none;
         flex-direction: column;
