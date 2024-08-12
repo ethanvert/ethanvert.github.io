@@ -1,23 +1,42 @@
-.hero {
-    background: url('./assets/hero_background.jpg') no-repeat center center/cover;
-    color: #fff;
-    height: 100vh;
+/* .hero {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;png
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 0 1rem; /* Add padding to ensure text stays within the page */
+    color: #fff; /* Add padding to ensure text stays within the page */
+/*}*/
+
+.hero {
+    height: 60vh; /* Adjust the height as needed to fit your text */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 0 1rem; /* Add some padding to the sides to ensure text doesn't touch edges */
+    box-sizing: border-box;
+    background-size: cover; /* Ensure background image covers the whole hero section */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat;
 }
 
 .hero-content {
-    max-width: 600px;
-    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 .hero h2 {
     font-size: 3rem;
     margin-bottom: 1rem;
-    word-wrap: break-word; /* Ensure long words are broken to prevent overflow */
+    text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 1), 
+                 -0.5px -0.5px 1px rgba(0, 0, 0, 1), 
+                 0.5px -0.5px 1px rgba(0, 0, 0, 1), 
+                 -0.5px 0.5px 1px rgba(0, 0, 0, 1);
 }
 
 .hero p {
@@ -25,12 +44,18 @@
     margin-bottom: 2rem;
     max-width: 100%; /* Ensure text doesn't overflow */
     margin: auto;
+    text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 1), 
+                 -0.5px -0.5px 1px rgba(0, 0, 0, 1), 
+                 0.5px -0.5px 1px rgba(0, 0, 0, 1), 
+                 -0.5px 0.5px 1px rgba(0, 0, 0, 1);
+    
 }
 
 .hero-buttons {
     display: flex;
-    gap: 1rem;
+    gap: 9.5rem;
     justify-content: center;
+    margin-top: 4rem;
 }
 
 .cta-button {
@@ -74,19 +99,27 @@
 
 .profile {
     display: flex;
-    align-items: center;
+    align-items: flex-start; /* Align items to the top */
     margin-bottom: 2rem;
+    text-align: left; /* Align text to the left */
 }
 
 .profile img {
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    margin-right: 2rem;
+    width: 400px; /* Increase size for larger image */
+    height: 400px; /* Match width for circular shape */
+    margin-left: 12rem; 
+    margin-top: 4rem;
     object-fit: cover;
-    object-position: center;
-    transform: scale(1.5);
+    object-position: 0px -100px;
 }
+
+.profile p {
+    margin: 0 0 1.5rem;
+    text-align: justify; /* Justify text for neat alignment */
+    max-width: 600px; /* Constrain width for readability */
+}
+
 
 .projects {
     display: flex;

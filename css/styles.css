@@ -40,7 +40,7 @@ header {
 
 header h1 {
     font-size: 2rem; /* Increase font size */
-    font-weight: 300; /* Thin out the font */
+    font-weight: 300; 
     white-space: nowrap;
     margin-right: auto; /* Move name to the left */
 }
@@ -54,8 +54,8 @@ nav a {
     color: #fff;
     margin: 0 1rem;
     text-decoration: none;
-    font-weight: bold;
-    font-size: 1.1rem; /* Increase font size */
+    font-weight: 200;
+    font-size: 1.3rem; /* Increase font size */
 }
 
 nav a:hover {
