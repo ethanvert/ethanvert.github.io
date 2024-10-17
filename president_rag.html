@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAG Agent</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/project.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <h1><a href="index.html">Ethan Vertal</a></h1>
+            <nav>
+                <div class="menu-icon" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul id="nav-links" class="nav-links">
+                    <li><a href="index.html#about-me">About Me</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="index.html#projects">Projects</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="./assets/Ethan_Vertal_Resume_June24.pdf" download>Download My Resume (PDF)</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="section" id="project">
+            <h2>Presidential History RAG App</h2>
+            <div class="project-content">
+                <img src="./assets/Subject.PNG" alt="Uncle Sam Robot" class="project-image">
+                <p>
+                    For this project, I dove headfirst into the exciting world of Retrieval-Augmented Generation (RAG) with the goal of creating a chatbot that's not just another run-of-the-mill AI. This app loaded with U.S. Presidential history, governmental structure, and the freshest political insights you can get your hands on. It's like having a White House insider in your pocket, minus the security clearance!
+                </p>
+                <p>
+                    The app takes your burning questions about American Presidents (like "What did Teddy Roosevelt really think about nature?" or "What did Joe Biden say in his most recent speech?") and goes on a lightning-fast treasure hunt through a goldmine of presidential speeches, biographies, and White House Q&As. It then works its magic to serve up answers that reference the acquired knowledge, accurately and safely.
+                </p>
+                <div class="challenges-takeaways">
+                    <div class="challenges">
+                        <h4>Challenges</h4>
+                        <ul>
+                            <li>Prompt engineering for instruction fine-tuning.</li>
+                            <li>Balancing the need for a re-ranking retriever with my computational limitations.</li>
+                            <li>Working around having 8GB of VRAM to run an LLM locally.</li>
+                            <li>Since other chat bots can search, I needed to figure out how to make mine better than their responses.</li>
+                        </ul>
+                    </div>
+                    <div class="takeaways">
+                        <h4>Takeaways</h4>
+                        <ul>
+                            <li>Discovered that extremely high-quality data retrieval and clever prompting are the secret sauce to RAG greatness.</li>
+                            <li>Learned that even in the world of AI, the 80/20 rule reigns supreme – focus on the gold, not the glitter.</li>
+                            <li>Realized that at its core, building a cutting-edge AI app like this is still just another web app.</li>
+                        </ul>
+                    </div>
+                </div>
+                <h3>Technologies and Concepts Used:</h3>
+                <ul>
+                    <li>Python</li>
+                    <li>LangChain</li>
+                        <ul>
+                            <li>LCEL</li>
+                            <li>Recursive Text Splitter</li>
+                            <li>ChromaDB</li>
+                        </ul>
+                    <li>HuggingFace</li>
+                    <li>Gradio</li>
+                    <li>LLaMa 3.2 3B</li>
+                    <li>Selenium</li>
+                    <li>BeautifulSoup</li>
+                    <li>Model Quantization</li>
+                    <li>LLM Tracking and Evaluation</li>
+                    <li>String Manipulation/Regex</li>
+                    <li>AI API Communication</li>
+                </ul>
+                <h3>Learn More:</h3>
+                <ul>
+                    <li><a href="https://github.com/ethanvert/RAG" target="_blank">Visit the Project GitHub</a></li>
+                    <li>Demo coming soon!</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>You can reach me at <a href="mailto:ethan.vertal@gmail.com">ethan.vertal@gmail.com</p>
+    </footer>
+    
+    <script src="./js/script.js"></script>
+
+</body>
+</html>
